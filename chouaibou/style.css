@@ -1,0 +1,133 @@
+.couleur{
+   
+    width: 1526px;
+    height: 140px;
+    position: relative;
+
+}
+.murder{
+    position: relative;
+    top: -36px;
+    left: 606px;
+    width: 291px;
+    height: 100px;
+}
+.cache{
+    display: block;
+    position: relative;
+    left: 465px;
+    top: -35px;
+    width: 551px;
+    background-color: #b7b7c2;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+.image1{
+    position:relative;
+    top: -99px;
+    left: 10px;
+    width: 331px;
+}
+.image2{
+    position:relative;
+    top: 10px;
+    left: 10px;
+    width: 331px;
+}
+.image3{
+    position:relative;
+    top: 10px;
+    left: 10px;
+    width: 331px;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    position: relative;
+    top: -961px;
+    left: 367px;
+    width: 946px;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 300px;
+    margin-right: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+.headerAlx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+.titleAlx{
+    font-size: 250%;
+}
+.navAlx{
+    display: flex;
+    flex-direction: row;
+}
+.navAlx li{
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+    float: left;
+}
+.navAlx li button{
+    padding: 0px 50px 0 50px ;
+    font-size: 150%;
+    font-family: 'Cinzel', serif;
+}
+.dropDown {
+    float: left;
+    overflow: hidden;
+}
+.dropDown button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+.dropDownSerie {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    z-index: 3;
+    font-size: 120%;
+}
+.dropDownSerie li {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropDown:hover .dropDownSerie {
+    display: block;
+}
