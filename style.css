@@ -1,0 +1,174 @@
+body {
+    margin: 0px;
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    font-family: 'Yanone Kaffeesatz', sans-serif;}
+/* Header */
+.headerHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+.titleHome{
+    font-size: 250%;
+    
+        a {text-decoration: none;
+        color: #FFF;
+        }
+}
+.navHome{
+    display: flex;
+    flex-direction: row;
+}
+.navHome li{
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+    float: left;
+}
+.navHome li button{
+    padding: 0px 50px 0 50px ;
+    font-size: 150%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.dropDown {
+    float: left;
+    overflow: hidden;
+}
+.dropDown button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+.fa-solid.fa-chevron-down {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+.dropDownSerie {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    z-index: 3;
+    font-size: 120%;
+}
+.dropDownSerie li {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.pageLinks{
+    text-decoration: none;
+    color: black;
+}
+.dropDown:hover .dropDownSerie {
+    display: block;
+
+    
+}
+.btnHead:hover { .fa-solid.fa-chevron-down {
+        /* -webkit-animation: flip-x 0.3s linear 0s;
+        animation: flip-x 0.3s linear 0s ; */
+        transform: rotate(180deg);
+        transition: all 0.3s;
+    }
+}
+.fa-solid.fa-chevron-down {  
+    /* -webkit-animation: flip-x 0.3s linear 0s;
+    animation: flip-x 0.3s linear 0s ; */
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+.secondTitle{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+.cards{
+    background-color: black;
+    min-height: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+        
+}
+/* Cards */
+.cardContainer{
+    display:flex;
+    justify-content: center;
+    
+        .card{
+            width: 260px;
+            height: 470px;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: #FFF solid 1px;
+            margin: 5px;
+            padding: 8px;
+                .cardTitle{ 
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 200%;
+                    font-style: normal;
+                    width: -webkit-fill-available;
+                }
+                .cardImageContainer{
+                    width: -webkit-fill-available;
+                    align-self: center;
+                    overflow: hidden;
+                        .cardImage{
+                            width: 230px;
+                            height: 300px;
+                            display: block;
+                            transition: all 0.3s;
+                            padding: 15px;
+                        }
+                        .cardImage:hover{
+                            transform: scale(1.1);
+                        }
+                }
+                .cardText{
+                    text-align: center;
+                    width: -webkit-fill-available;
+                        ul,li {
+                            padding: 3px;
+                            list-style-type: none;
+                        }
+                }
+                .cardLinks{
+                    padding: 10px;
+                    margin: 15px 0px 10px 0px;
+                    transition: all 0.3s;
+                    text-decoration: none;
+                    font-size: large;
+                    color: white;
+                    
+                }
+                .cardLinks:hover{
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                }
+        }
+}
+.FooterHome{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
