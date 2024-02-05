@@ -2,36 +2,38 @@
     display: flex;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 3px 3px 4px black;
+    font-size:x-large;
 }
 
-.headerAlx{
+.headerHome{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(24, 24, 24);
     color: white;
 }
-.titleAlx{
+.titleHome{
     font-size: 250%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+        a {text-decoration: none;
+        color: #FFF;
+        }
 }
-.navAlx{
+.navHome{
     display: flex;
     flex-direction: row;
 }
-.navAlx li{
+.navHome li{
     padding-left: 50px;
     padding-right: 50px;
     list-style: none;
     float: left;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navAlx li button{
+.navHome li button{
     padding: 0px 50px 0 50px ;
     font-size: 150%;
-    font-family: 'Cinzel', serif;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .dropDown {
     float: left;
@@ -44,6 +46,10 @@
     color: white;
     background-color: inherit;
     margin: 0;
+}
+.fa-solid.fa-chevron-down {
+    transform: rotate(0deg);
+    transition: all 0.3s;
 }
 .dropDownSerie {
     display: none;
@@ -61,8 +67,14 @@
     display: block;
     text-align: left;
 }
+.pageLinks{
+    text-decoration: none;
+    color: black;
+}
 .dropDown:hover .dropDownSerie {
     display: block;
+
+    
 }
 .synopsis{
     display: flex;
@@ -75,9 +87,6 @@ body{
     font-weight: bolder;
     background: linear-gradient(180deg, rgb(49, 47, 47), rgb(162, 18, 18));
 }
-
-
-
 
 
 .carousel-container {
@@ -179,4 +188,18 @@ body{
       }
     }
   }
-  
+  .btn.prev{
+    box-shadow: #10100e 10px 10px;
+  }
+  .btn.next{
+    box-shadow: #10100e 10px 10px;
+  }
+  .FotterAlx{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 32, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
